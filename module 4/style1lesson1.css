@@ -1,0 +1,14 @@
+/*global css*/
+*{font-size:35px;
+font-weight:500;}
+/*extranal css*/
+h3{color:yellow;}
+/*element selector*/
+h4{color:green;}
+/*class selector*/
+.myclass{color:skyblue}
+/*id selector*/
+#myid{color: indigo;}
+/*group selector*/
+h5,
+p{color: pink;}
