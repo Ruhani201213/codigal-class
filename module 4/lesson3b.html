@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes colourcombo{
+0%{background-color:red;}
+25%{background-color: yellow;}
+50%{background-color:green;}
+100%{background-color:blue;}
+}
+
+div{
+        width: 400px;
+        height: 200px;
+        background-color:black;
+        animation-name:colourcombo;
+        animation-duration:4s;
+        border:10px solid black;
+}
+#mydiv{
+    transform:rotateX(180deg);
+}
+</style>
+</head>
+<body>
+
+    <div>this is right</div>
+    <div id = mydiv>this is wrong</div>
+</body>
+</html>
