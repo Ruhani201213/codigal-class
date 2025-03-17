@@ -1,0 +1,51 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+    color: black;
+}
+
+h1{
+    color: crimson;
+}
+
+a{
+    color: rgb(225, 147, 23);
+    text-decoration: underline;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+ul>li{
+    font-weight: bolder;
+}
+
+h1+p{
+    background-color: rgb(44, 43, 42);
+    padding:15px;
+    border-radius:7px;
+}
+
+ul li:hover{
+    color: darkcyan;
+}
+
+ul li:nth-child(3){background-color: darkgreen;}
+
+p:not(:first-of-type)
+{text-decoration: underline;}
+
+ul li::before{
+    content:"💕💕💕💕💕";
+}
+
+a::after{
+
+    content:"👽";
+}
+
+p::first-letter{
+    font-size: 300%;
+    color: darkorchid;
+}
