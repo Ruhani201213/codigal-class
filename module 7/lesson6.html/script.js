@@ -8,9 +8,9 @@ document.getElementById("result").value += value;
 }
 function calculateResult() {
 const resultElement = document.getElementById("result");
-const expression = resultElement.value. trim();
+const expression = resultElement.value.trim();
 
-if expression === "') {
+if (expression === "") {
 resultElement.value = 'Enter an expression';
 return;
 
@@ -18,4 +18,4 @@ return;
 try {
 resultElement.value = eval(expression);
 } catch (e) {
-resultElement.value = 'Invalid expression';}
+resultElement.value = 'Invalid expression';}}
