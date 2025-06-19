@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 in Schools - Team Nova</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #bca3bd;
+      color: #fff;
+    }
+    header {
+      background:#462f41;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #1a1a1a;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #462f41;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .member {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    .member img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Team Nova</h1>
+    <p>F1 in Schools Competition</p>
+  </header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#members">Our Team</a>
+    <a href="#car">Our Car</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Team Nova</h2>
+    <p>We are an innovative and passionate group of students competing in the F1 in Schools competition. Our goal is to combine STEM, creativity, and teamwork to design the fastest and most efficient miniature F1 car.</p>
+  </section>
+
+  <section id="members" class="section">
+    <h2>Meet the Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="asma.png" alt="Team Member">
+        <h3>asma</h3>
+        <p><i> team manager, graphic designer, engineer</i>
+ Asmaa excels as engineer for the team by combining
+ creativity with technical expertise. She creates
+ professional visuals like logos and car liveries while also
+ optimizing the car's performance through careful design
+ and engineering</p>
+      </div>
+      <div class="member">
+        <img src="saphia.png" alt="Team Member">
+        <h3>Saphia</h3>
+        <p> <i>sponsorship manager, marketing manager</i>
+ Saphia finds sponsors, manages partnerships, and
+ promotes the team through branding and social media.
+ Her creativity and communication skills make her great
+ at attracting support and building the team’s image. She
+ also helps reflect the team's values</p>
+      </div>
+      <div class="member">
+        <img src="ruhani.png" alt="Team Member">
+        <h3>Ruhani</h3>
+        <p><i>resource manager, finance manager</i>
+ Ruhani researches materials, designs, and strategies to
+ help improve the car and supports the team’s
+ sustainability goals. She also manages the budget, tracks
+ spending, and ensures resources are used efficiently
+ throughout the project</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="car" class="section">
+    <h2>Our Car</h2>
+    <p>Our car is engineered using aerodynamic principles and precision manufacturing techniques. We used CAD software and wind tunnel simulations to refine the performance.</p>
+    <img src="car.png" alt="Team Car" style="width:100%; border-radius:10px; margin-top:20px;">
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:10px 0;">
+      <input type="email" id="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:10px 0;">
+      <textarea id="message" placeholder="Your Message" required style="width:100%;padding:10px;margin:10px 0;"></textarea>
+      <button type="submit" style="padding:10px 20px;background:#e10600;color:#fff;border:none;cursor:pointer;">Send Message</button>
+    </form>
+        <p id="responseMessage" style="margin-top:10px;color:#0f0;"></p>
+    <div class="socials">
+<h4>Instagram</h4>
+        <p>@nova.f1dxb</p>
+  <h4>Tiktok</h4>
+        <p>@nova.f1dxb</p> 
+   
+    </div>
+    <br>
+
+    <p id="responseMessage" style="margin-top:10px;color:#0f0;"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Team Nova - F1 in Schools</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const response = document.getElementById('responseMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      response.textContent = `Thanks, ${name}! We'll be in touch.`;
+      form.reset();
+    });
+
+  
+  </script>
+
+</body>
+</html>
