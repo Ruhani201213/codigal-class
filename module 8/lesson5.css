@@ -79,3 +79,12 @@ background-color: #9e8658;}
 button:nth-child(12) {
 font-size: 20px;
 background-color:palevioletred}
+
+button:nth-child(16) {
+font-size: 20px;
+background-color:#7d93ee;}
+
+button:nth-child(20) {
+font-size: 20px;
+background-color:plum;
+}
