@@ -4,7 +4,7 @@ print("Set :", my_set)
 my_set.add(5)
 print("Updated Set:", my_set)
 
-setl = my_set
+set1 = my_set
 set2 = {2,4,4,6}
 
 print("\nSet 1", set1)

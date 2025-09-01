@@ -1,4 +1,4 @@
-setcl = {"green", "blue"}
+setc1 = {"green", "blue"}
 setc2 = {"blue", "yellow"}
 print("Original sets:")
 print(setc1)
