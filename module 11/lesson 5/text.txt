@@ -1,0 +1,1 @@
+file is now in write mode:hellofile is now in append mode:hello
